@@ -3,7 +3,7 @@
 */
 
 #include <RCSwitch.h>
-
+int testchange;
 RCSwitch mySwitch = RCSwitch();
 int value;
 int As;
@@ -122,6 +122,7 @@ void switchOutput(){
     digitalWrite(B, LOW);Bs=0;
     Serial.println("B = LOW");
     delay(1000);
+    testchange = HIGH;
     digitalWrite(C, LOW);Cs=0;
     Serial.println("C = LOW");
     delay(1000);
